@@ -1,3 +1,13 @@
+## ERC721MC
+
+ERC721MC is a modification of the ERC721M to include the creator token contracts (https://github.com/limitbreakinc/creator-token-contracts) and their programmable royalty extensions.
+
+Both token types share a common base token standard (the Azuki ERC721A), so this is essentially adding the necessary code to bridge the functionality of the Magic Eden ERC721M's minting stages, merkel-root based security, cosigning, etc. with Limit Break's ERC721AC behaviors. 
+
+Ideally, the ERC721MOperatorFiltererRoyaltySplitter.sol will serve as a reference for implementing creator-minter shared royalties within the framework of the Magic Eden ERC721MOperatorFilterer.
+
+Additional hardhat tests have been added to demonstrate the compatibility and functionalities of this variation. 
+
 ## ERC721M
 
 ERC721M is a EVM minting protocol that enables the multi stage minting, per stage WL management, per stage supply limit, and crossmint support.
@@ -88,3 +98,4 @@ We are targeting 100% lines coverage.
 ## License
 
 MIT © [MagicEden Open Source](https://github.com/magiceden-oss)
+
