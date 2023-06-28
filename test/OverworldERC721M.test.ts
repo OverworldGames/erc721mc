@@ -80,10 +80,6 @@ describe('Overworld: ERC721MOperatorFiltererRoyaltySplitter', function () {
     );
       
     await eRC721MOperatorFiltererRoyaltySplitter.deployed();
-
-    eRC721MOperatorFiltererRoyaltySplitter.on("CheckedStage", (value) => {
-      console.log("CheckedStage logged:", value);
-    });
     
     contract = eRC721MOperatorFiltererRoyaltySplitter.connect(owner);
     readonlyContract = eRC721MOperatorFiltererRoyaltySplitter.connect(readonly);
